@@ -1,0 +1,119 @@
+%% Creator: Inkscape 0.48.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'lorem.eps' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{427.24365234bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.78496866)%
+    \put(0,0){\includegraphics[width=\unitlength]{lorem.eps}}%
+    \put(0.01083736,0.725){\color[rgb]{0,0,0}\makebox(0,0)[lt]
+	{\begin{minipage}{0.97703553\unitlength}
+	\begin{center}
+\large\textsl{\textbf{Método de Cifrado de Doble Transposición}}
+\end{center}
+
+\normalsize \hspace{5.5mm}Se trata de un código utilizado por el ejército de los EE.UU en la 1\textordfeminine \ 
+Guerra Mundial, prácticamente idéntico al código UBCHI alemán. Consiste fundamentalmente
+en realizar una primera transposición del texto plano según las letras de una o dos claves,
+así por ejemplo, la palabra ENIGMA, equivaldría a la clave 264351 (donde los números representan
+en qué orden aparecen las letras de la palabra clave en el alfabeto). Se coloca el texto plano en una 
+matriz de tantas columnas como letras posea la palabra clave, escribiendo por filas, y se realiza una 
+primera transposición por columnas. Una vez hecha esta operación se vuelven a coger las columnas 
+transpuestas y se escriben nuevamente por filas, y se realiza la segunda transposición por columnas, 
+en este paso se podría hacer uso de una segunda palabra clave. Veamos como se cifraría el mensaje ``REPLEGAR 
+TROPAS EN TORNO A LA POSICION INICIAL'', con la única palabra clave ENIGMA.
+\begin{center}
+\setlength{\tabcolsep}{1.1mm}
+\begin{tabular}{cccccc}
+1&2&3&4&5&6\\ \hline
+R&E&P&L&E&G\\
+A&R&T&R&O&P\\
+A&S&E&N&T&O\\
+R&N&O&A&L&A\\
+P&O&S&I&C&I\\
+O&N&I&N&I&C\\
+I&A&L&&&
+\end{tabular}
+$\Rightarrow$
+\begin{tabular}{cccccc}
+2&6&4&3&5&1\\ \hline
+E&G&L&P&E&R\\
+R&P&R&T&O&A\\
+S&O&N&E&T&A\\
+N&A&A&O&L&R\\
+O&I&I&S&C&P\\
+N&C&N&I&I&O\\
+A&&L&&I
+\end{tabular}
+$\Rightarrow$
+\begin{tabular}{cccccc}
+1&2&3&4&5&6\\ \hline
+E&R&S&N&O&N\\
+A&G&P&O&A&I\\
+C&L&R&N&A&I\\
+N&P&T&E&O&S\\
+I&L&E&O&T&L\\
+C&I&R&A&A&R\\
+P&O&I&&&
+\end{tabular}
+$\Rightarrow$
+\begin{tabular}{cccccc}
+2&6&4&3&5&1\\ \hline
+R&N&N&S&O&E\\
+G&I&O&P&A&A\\
+L&I&N&R&A&C\\
+P&S&E&T&O&N\\
+L&L&O&E&T&I\\
+I&R&A&R&A&C\\
+O&&&I&&P
+\end{tabular}
+\end{center}
+Finalmente se agrupaban en grupos de cinco letras para su transmisión en código Morse, resultando:
+\vspace{-2mm}\begin{center} RGLPL  \ IONII \ SLRNO \ NEOAS \ PRTER \ IOAAO \ TAEAC \ NICP\end{center}
+	\end{minipage}}}%
+  \end{picture}%
+\endgroup%
